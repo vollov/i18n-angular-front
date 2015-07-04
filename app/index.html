@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="labApps">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/bootswatch.less" rel="stylesheet">
+    
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Super Rent</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <strong class="navbar-brand"></strong>
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+        
+        	<ul class="nav navbar-nav navbar-left">
+				<li><a href="/">Home</a></li>
+				<li><a href="#/about">About</a></li>
+            </ul>
+            
+            <ul class="nav navbar-nav navbar-right" ng-controller="SettingCtrl">
+        		<li><button type="button" class="btn btn-default btn-xs" ng-click="changeLanguage('en')">English</button></li>
+        		<li><button type="button" class="btn btn-link btn-xs" ng-click="changeLanguage('zh')">中文</button></li>
+        	</ul>
+        
+        </div><!--/.navbar-collapse -->
+
+
+ 
+        
+      </div>
+    </nav>
+    
+    <div class="container">
+      <div ng-view></div>
+    </div> <!-- /container -->
+
+  <script src="lib/jquery/jquery.js"></script>
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular/angular-resource.js"></script>
+  <script src="lib/angular/angular-cookies.js"></script>
+  <script src="lib/angular/angular-route.js"></script>
+  <script src="lib/angular/angular-translate.min.js"></script>
+  <script src="lib/angular/ui-bootstrap-tpls.js"></script>
+
+  <script src="lib/bootstrap/bootstrap.min.js"></script>
+  <script src="lib/underscore/underscore.js"></script>
+
+
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/services.js"></script>
+  
+  <!-- 
+  <script src="js/demo.js"></script>
+   -->
+  </body>
+</html>
